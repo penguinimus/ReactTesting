@@ -9,6 +9,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const paths = {
   DIST: path.resolve(__dirname, 'dist'),
   SRC: path.resolve(__dirname, 'src'),
+  PUBL: path.resolve(__dirname, 'public'),
   JS: path.resolve(__dirname, 'src/js'),
 };
 
@@ -22,7 +23,7 @@ module.exports = {
   // Tell webpack to use html plugin
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(paths.SRC, 'index.html'),
+      template: path.join(paths.PUBL, 'index.html'),
     }),
     new ExtractTextPlugin('style.bundle.css'), // CSS will be extracted to this bundle file -> ADDED IN THIS STEP
   ],
