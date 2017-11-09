@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
+import ReactDOM, { render } from 'react-dom';
 
-import '../css/style.css';
+import Items from '../components/items';
+import ItemsList from '../components/listitems';
 
-import keenImage from '../assets/keen.png';
-
-export default class Hello extends Component {
-  render() {
-    return (
-      <div>
-        Hello from react
-        
-        <img src={ keenImage } alt='Commander Keen' />
-      </div>
-    );
-  }
+class Hello extends Component {
+    render() {
+      return (
+          <ItemsList myProp={Items} />
+      );
+    }
 }
 
-render(<Hello />, document.getElementById('app'));
+render(
+<Hello />, 
+document.getElementById('app'));
