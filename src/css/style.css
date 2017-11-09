@@ -5,3 +5,23 @@ body {
   margin: 0;
   padding: 30px;
 }
+
+.list-details {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 300px;
+  max-width: 40%;
+}
+
+ul {
+  overflow: hidden;
+  list-style-type: none;
+  padding: 2px;
+  margin: 2px;
+}
+
+
+
+li:hover {
+  border: 1px solid #99f;
+}

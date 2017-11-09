@@ -1,7 +1,8 @@
 const items = [
-  { first: 'shawn', last: 'erens' },
-  { first: 'lisa', last: 'erens' },
-  { first: 'The', last: 'Doctor' }
+  { first: 'Shawn', last: 'Erens' },
+  { first: 'Lisa', last: 'Erens' },
+  { first: 'The', last: 'Doctor' },
+  { first: 'Bill', last: 'Pneumoultramicroscopicossilicovulcanoconiose'}
 ];
 
 export default items;
